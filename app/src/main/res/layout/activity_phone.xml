@@ -1,0 +1,96 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.mobileinternet.waimai.businessedition.activity.Acount.AcountActivity">
+
+    <LinearLayout
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:id="@+id/we_connect"
+        style="@style/shop_ll"
+        android:clickable="true"
+        android:padding="0dp">
+
+        <TextView
+            style="@style/we_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:clickable="false"
+            android:text="手机号:" />
+
+        <EditText
+            android:id="@+id/phone_et_phone"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:background="@android:color/white"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:clickable="false"
+            android:gravity="left|center_vertical"
+            android:paddingRight="10dp"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:background="@android:color/white"
+        style="@style/shop_ll"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:clickable="true">
+
+        <TextView
+            android:background="@android:color/white"
+            android:padding="0dp"
+            style="@style/we_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:clickable="false"
+            android:text="验证码:" />
+
+        <EditText
+            android:id="@+id/phone_et_confirm_number"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:clickable="false"
+            android:gravity="center"
+            android:background="@android:color/white"
+            android:layout_marginRight="10dp"
+           />
+
+        <TextView
+            android:onClick="fetchConfirmNumber"
+            android:paddingTop="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textSize="12sp"
+            android:background="@drawable/selector_index"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="获取验证码" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/shape_add_business_time_tv"
+        android:clickable="true"
+        android:gravity="center"
+        android:onClick="applyModification"
+        android:text="提交绑定"
+        android:textColor="@android:color/holo_red_light" />
+
+
+</LinearLayout>

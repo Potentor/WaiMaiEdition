@@ -1,0 +1,99 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+
+    <LinearLayout
+        android:background="#CCCCCC"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:paddingLeft="@dimen/padding_left"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="菜品"
+            />
+
+        <TextView
+            android:id="@+id/dish_tv_edit"
+            android:paddingLeft="10dp"
+            android:paddingRight="@dimen/padding_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="#003E5B"
+            android:text="编辑"
+            />
+
+    </LinearLayout>
+
+    <com.mobileinternet.waimai.businessedition.view.DragSortListView
+        android:id="@+id/dish_listview"
+        android:layout_weight="1"
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@android:color/darker_gray"
+        />
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/dish_list_ll_bottom"
+        android:showDividers="middle"
+        android:divider="@drawable/divider_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+        <TextView
+            android:clickable="true"
+            android:id="@+id/dish_tv_restore"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:text="恢复(售卖)"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:onClick="restoreSale"
+            android:background="@drawable/selector_list_item_click"
+            />
+
+            <TextView
+                android:onClick="stopSale"
+                android:id="@+id/dish_tv_stop"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:text="暂停(售卖)"
+                android:gravity="center"
+                android:textSize="15sp"
+                android:clickable="true"
+                android:background="@drawable/selector_list_item_click"
+                />
+
+            <TextView
+                android:onClick="deleteDish"
+                android:id="@+id/dish_tv_delete"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:text="删     除"
+                android:textColor="@android:color/holo_red_light"
+                android:gravity="center"
+                android:textSize="15sp"
+                android:clickable="true"
+                android:background="@drawable/selector_list_item_click"
+                />
+    </LinearLayout>
+
+</LinearLayout>

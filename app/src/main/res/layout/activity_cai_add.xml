@@ -1,0 +1,224 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.mobileinternet.waimai.businessedition.activity.Dish.CaiAddActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background"
+        android:orientation="vertical">
+
+        <com.mobileinternet.waimai.businessedition.view.smartiv.SmartImageView
+            android:id="@+id/add_dish_sv"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginTop="16dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/img_food_info_default_big" />
+
+        <LinearLayout style="@style/add_dish_ll"
+            android:layout_marginTop="10dp"
+            >
+
+            <TextView
+                style="@style/add_dish_tv"
+                android:text="菜名(必填)" />
+
+            <EditText
+                android:id="@+id/add_dish_et_cai_name"
+                style="@style/add_dish_et"
+                android:hint="请输入菜品" />
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/add_dish_title"
+            android:text="规格" />
+
+        <LinearLayout
+            android:id="@+id/add_dish_ll_add_guige_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/view_add_dish_guige" />
+
+            <LinearLayout
+                android:id="@+id/add_dish_ll_add_guige"
+                android:onClick="addGuige"
+                android:clickable="true"
+                android:paddingLeft="@dimen/add_dish_padding"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/selector_list_item_click"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:drawableLeft="@drawable/ic_add_food"
+                    android:drawablePadding="8dp"
+                    android:gravity="center_vertical"
+                    android:text="添加规格"
+                    android:textColor="#DC8244" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="(为菜品设置不同的价格)" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/add_dish_title"
+            android:text="属性" />
+
+        <LinearLayout
+            android:id="@+id/add_dish_ll_add_att_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/add_dish_ll_add_att"
+                android:onClick="addAtt"
+                android:paddingLeft="@dimen/add_dish_padding"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/selector_list_item_click"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:drawableLeft="@drawable/ic_add_food"
+                    android:drawablePadding="8dp"
+                    android:gravity="center_vertical"
+                    android:text="添加属性"
+                    android:textColor="#DC8244" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="(如辣度、热度)" />
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/add_dish_title"
+            android:text="购买单位及餐盒配备" />
+
+        <LinearLayout
+            android:background="@drawable/ic_list_item_normal"
+            style="@style/add_dish_ll">
+
+            <TextView
+                style="@style/add_dish_tv"
+                android:text="菜品单位" />
+
+            <EditText
+                android:id="@+id/add_dish_et_unit"
+                style="@style/add_dish_et"
+                android:hint="份"
+                 />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@drawable/ic_list_item_normal"
+            style="@style/add_dish_ll">
+
+            <TextView
+                style="@style/add_dish_tv"
+                android:text="最小购买数量" />
+
+            <EditText
+                android:inputType="number"
+                android:id="@+id/add_dish_et_min_buy"
+                style="@style/add_dish_et"
+                android:hint="1"
+                 />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:background="@drawable/ic_list_item_normal"
+            style="@style/add_dish_ll">
+
+            <TextView
+                style="@style/add_dish_tv"
+                android:text="需要餐盒数" />
+
+            <EditText
+                android:inputType="number"
+                android:id="@+id/add_dish_et_box_num"
+                style="@style/add_dish_et"
+                android:hint="0" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@drawable/ic_list_item_normal"
+            style="@style/add_dish_ll">
+
+            <TextView
+                style="@style/add_dish_tv"
+                android:text="餐盒费(/个)" />
+
+            <EditText
+                android:inputType="numberDecimal"
+                android:id="@+id/add_dish_et_unit_price"
+                style="@style/add_dish_et"
+                android:hint="0.0"/>
+
+        </LinearLayout>
+
+
+        <TextView
+            style="@style/add_dish_title"
+            android:text="菜品描述" />
+
+        <EditText
+            android:layout_marginBottom="16dp"
+            android:id="@+id/add_dish_et_descripe"
+            android:paddingLeft="@dimen/add_dish_padding"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:paddingRight="5dp"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="100dp"
+            android:background="@android:color/white"
+            android:hint="介绍一下菜品的特色吧！"
+            android:textColorHint="@android:color/secondary_text_dark" />
+
+        <Button
+            android:visibility="gone"
+            android:onClick="preview"
+            android:id="@+id/add_dish_bt_preview"
+            android:textColor="#DC8244"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@android:color/white"
+            android:text="预 览" />
+
+
+    </LinearLayout>
+
+
+</ScrollView>

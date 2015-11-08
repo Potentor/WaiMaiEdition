@@ -1,0 +1,177 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.mobileinternet.waimai.businessedition.activity.Dining.ShopIndexActivity">
+
+     <TextView
+    android:id="@+id/pre_order_tv_business"
+    android:layout_marginTop="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="20dp"
+    android:textSize="17sp"
+    android:paddingRight="16dp"
+    android:paddingLeft="16dp"
+    android:text="今日数据："
+    />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            style="@style/index_up_ll">
+
+            <TextView
+                android:text="接单量"
+                style="@style/shop_index_tv" />
+
+            <RelativeLayout
+                style="@style/index_up_rl">
+
+                <TextView
+                    android:id="@+id/text"
+                    style="@style/shop_index_rl_tv_center"
+                    android:text="/"
+                    />
+                <TextView
+                    android:id="@+id/shop_index_tv_jidan"
+                    android:layout_alignBottom="@id/text"
+                    android:layout_toLeftOf="@id/text"
+                    style="@style/shop_index_rl_tv_big"
+                    />
+                <TextView
+                    android:id="@+id/shop_index_tv_total1"
+                    android:layout_toRightOf="@id/text"
+                    style="@style/shop_index_rl_tv_left"
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/index_up_ll">
+
+            <TextView
+                android:text="超时接单量"
+                style="@style/shop_index_tv" />
+
+            <RelativeLayout
+                style="@style/index_up_rl">
+
+                <TextView
+                    android:id="@+id/text2"
+                    style="@style/shop_index_rl_tv_center"
+                    android:text="/"
+                    />
+                <TextView
+                    android:id="@+id/shop_index_tv_oot"
+                    android:layout_alignBottom="@id/text2"
+                    android:layout_toLeftOf="@id/text2"
+                    style="@style/shop_index_rl_tv_big"
+                    />
+                <TextView
+                    android:id="@+id/shop_index_tv_total2"
+                    android:layout_toRightOf="@id/text2"
+                    style="@style/shop_index_rl_tv_left"
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout
+            style="@style/index_up_ll">
+
+            <TextView
+                android:text="催单量"
+                style="@style/shop_index_tv" />
+
+            <RelativeLayout
+                style="@style/index_up_rl">
+
+                <TextView
+                    android:id="@+id/text3"
+                    style="@style/shop_index_rl_tv_center"
+                    android:text="/"
+                    />
+                <TextView
+                    android:id="@+id/shop_index_tv_cuidan"
+                    android:layout_alignBottom="@id/text3"
+                    android:layout_toLeftOf="@id/text3"
+                    style="@style/shop_index_rl_tv_big"
+                    />
+                <TextView
+                    android:id="@+id/shop_index_tv_total3"
+                    android:layout_toRightOf="@id/text3"
+                    style="@style/shop_index_rl_tv_left"
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp"
+        android:textSize="17sp"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        android:text="30日平均数据"
+        />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                style="@style/index_up_ll">
+
+                <TextView
+                    android:text="超时接单率"
+                    style="@style/shop_index_tv" />
+
+
+                <TextView
+                    android:id="@+id/index_rate_oot"
+                    android:layout_toRightOf="@id/text"
+                    style="@style/shop_index_rl_tv_left"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/index_up_ll">
+
+                <TextView
+                    android:text="催单率"
+                    style="@style/shop_index_tv" />
+
+
+                <TextView
+                    android:id="@+id/index_rate_urge"
+                    android:layout_toRightOf="@id/text"
+                    style="@style/shop_index_rl_tv_left"
+                    />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

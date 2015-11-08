@@ -1,0 +1,114 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:showDividers="middle"
+        android:divider="@drawable/divider_transparent"
+        android:orientation="vertical">
+
+        <TextView
+
+            style="@style/finance_tv_title"
+            android:text="结算信息" />
+
+        <LinearLayout style="@style/finance_ll">
+
+            <TextView
+                style="@style/finance_tv_content_left"
+                android:text="结算方式" />
+
+            <TextView
+                android:id="@+id/finance_tv_settle_way"
+                style="@style/finance_tv_content_right"
+                 />
+        </LinearLayout>
+
+        <LinearLayout style="@style/finance_ll">
+
+            <TextView
+                style="@style/finance_tv_content_left"
+                android:text="最低打款金额" />
+
+            <TextView
+                android:id="@+id/finance_tv_min_cash"
+                style="@style/finance_tv_content_right"
+                android:textColor="@android:color/holo_red_light" />
+        </LinearLayout>
+
+
+        <TextView
+            style="@style/finance_tv_title"
+            android:text="提款信息" />
+
+        <LinearLayout style="@style/finance_ll">
+
+            <TextView
+                style="@style/finance_tv_content_left"
+                android:text="开户银行" />
+
+            <TextView
+                android:id="@+id/finance_tv_bank_name"
+                style="@style/finance_tv_content_right"
+                 />
+        </LinearLayout>
+
+        <LinearLayout style="@style/finance_ll">
+
+            <TextView
+                style="@style/finance_tv_content_left"
+                android:text="银行卡号" />
+
+            <TextView
+                android:id="@+id/finance_tv_bank_number"
+                style="@style/finance_tv_content_right"
+                 />
+        </LinearLayout>
+
+        <LinearLayout style="@style/finance_ll">
+
+            <TextView
+                style="@style/finance_tv_content_left"
+                android:text="户名" />
+
+            <TextView
+                android:id="@+id/finance_tv_bank_user"
+                style="@style/finance_tv_content_right"
+                 />
+        </LinearLayout>
+
+
+        <TextView
+            style="@style/finance_tv_title"
+            android:text="余额信息" />
+
+        <LinearLayout style="@style/finance_ll">
+
+            <TextView
+                style="@style/finance_tv_content_left"
+                android:text="余额" />
+
+            <TextView
+                android:id="@+id/finance_tv_my_money"
+                style="@style/finance_tv_content_right"
+                android:textColor="@android:color/holo_red_light" />
+        </LinearLayout>
+
+
+        <Button
+            android:onClick="takeOutMoney"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/selector_finance_bt"
+            android:text="提现"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+</ScrollView>

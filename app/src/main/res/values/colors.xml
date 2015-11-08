@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="menu_click">#373737</color>
+    <color name="background">#F2F6F8</color>
+    <color name="text_press">#EEF2F5</color>
+    <color name="background_tab_pressed">#6633B5E5</color>
+
+
+    <color name="order_main_color">@android:color/holo_green_light</color>
+    <color name="order_another_color">#444547</color>
+
+</resources>

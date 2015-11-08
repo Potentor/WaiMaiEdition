@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="15dp"
+    android:background="@drawable/selector_not_change"
+    android:paddingTop="15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <include
+            android:id="@+id/comment_order_inlude"
+            layout="@layout/five_red_starts" />
+
+        <TextView
+            android:id="@+id/comment_order_tv_dispatch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:drawableLeft="@drawable/ic_delivery_time_big"
+            android:drawablePadding="8dp"
+             />
+
+        <TextView
+            android:id="@+id/comment_order_tv_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:paddingRight="16dp"
+             />
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_marginTop="20dp"
+    android:id="@+id/comment_order_tv_user"
+    android:paddingLeft="16dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    />
+
+
+    <TextView
+        android:id="@+id/comment_order_tv_comment"
+        android:textSize="15sp"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/comment_order_tv_reply"
+        android:textColor="@android:color/secondary_text_dark"
+        android:textSize="12sp"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <RelativeLayout
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/comment_order_ll_detail"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/comment_order_tv_detail"
+            android:textColor="@android:color/tab_indicator_text"
+            android:textSize="15sp"
+            android:gravity="center_vertical"
+            android:drawableRight="@drawable/ic_expand_small"
+            android:text="订单详情"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/comment_order_bt"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="回 复"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:background="@drawable/selector_reply_bt"
+            />
+
+
+        </RelativeLayout>
+
+
+
+</LinearLayout>

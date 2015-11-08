@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ic_list_item_normal"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:layout_marginTop="10dp">
+
+    <ImageView
+        android:id="@+id/add_dish_iv_guige_delete"
+        android:layout_width="40dp"
+        android:layout_height="120dp"
+        android:layout_marginRight="10dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_delete_food" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/add_dish_ll_nouse_name"
+            style="@style/add_dish_ll"
+            android:padding="10dp">
+
+
+            <TextView
+                style="@style/add_dish_tv"
+                android:text="规格名称(必填)" />
+
+            <EditText
+                android:id="@+id/add_dish_et_guige_name"
+                style="@style/add_dish_et"
+                android:hint="规格名称" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/add_dish_ll"
+            android:padding="10dp">
+
+
+            <TextView
+                style="@style/add_dish_tv"
+                android:text="价格(必填)" />
+
+            <EditText
+                android:inputType="numberDecimal"
+                android:id="@+id/add_dish_et_guige_price"
+                style="@style/add_dish_et"
+                android:hint="请输入价格" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:clickable="true"
+            android:background="@android:color/white"
+            android:padding="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginRight="16dp"
+                android:text="使用库存"
+                android:gravity="left|center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <ToggleButton
+                android:id="@+id/add_dish_tb"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:background="@android:color/transparent"
+                android:button="@drawable/toggle_btn"
+                android:gravity="right"
+                android:textOff=""
+                android:textOn="" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/add_dish_ll"
+            android:padding="10dp">
+
+
+            <TextView
+                style="@style/add_dish_tv"
+                android:text="库存" />
+            <EditText
+                android:inputType="number"
+                android:id="@+id/add_dish_et_guige_store"
+                style="@style/add_dish_et"
+                android:hint="默认不限"
+               />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

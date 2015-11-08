@@ -1,0 +1,67 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout style="@style/finance_ll">
+        <TextView
+            style="@style/tixian_tv_left"
+            android:text="所剩余额：" />
+
+        <TextView
+            android:textColor="@android:color/holo_red_light"
+            android:id="@+id/tixian_tv_total"
+            style="@style/tixian_tv_right"
+            android:gravity="center"
+            android:text="￥30000.0" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/finance_ll">
+
+        <TextView
+            style="@style/tixian_tv_left"
+            android:text="提款金额：" />
+
+        <EditText
+            android:layout_gravity="center_vertical"
+            android:id="@+id/tixian_et_money"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:inputType="number"
+            android:hint="输入你要提取的金额"
+            android:background="@android:color/transparent"
+            android:textColorHint="@android:color/darker_gray"
+            android:textColor="@android:color/holo_blue_dark"
+             />
+    </LinearLayout>
+
+
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="@string/tixian_notice"
+        />
+
+    <Button
+        android:onClick="takeOutMoney"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/selector_finance_bt"
+        android:text="提现"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+
+
+</LinearLayout>

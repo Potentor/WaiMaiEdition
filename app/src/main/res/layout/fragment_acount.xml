@@ -1,0 +1,135 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:showDividers="middle"
+        android:divider="@drawable/divider_transparent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:clickable="true"
+            android:id="@+id/acount_acount"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="@drawable/selector_list_item_click"
+            android:gravity="center_vertical"
+            android:padding="20dp">
+
+            <com.mobileinternet.waimai.businessedition.view.smartiv.SmartImageView
+                android:id="@+id/acount_iv_logo"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:clickable="false"
+                android:scaleType="fitCenter"
+                android:src="@drawable/img_money" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="false"
+                android:gravity="left|center_vertical"
+                android:orientation="vertical"
+                android:paddingLeft="10dp">
+
+                <TextView
+                    android:id="@+id/acount_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:minWidth="100dp"
+                    android:id="@+id/acount_phone_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/shape_acount_heard_textview"
+                    android:clickable="false"
+                    android:gravity="center"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="10dp"
+                    android:textColor="#943322"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <ImageView
+                style="@style/iv_arrow"
+                />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@android:color/transparent"
+            />
+
+     <TextView
+         android:id="@+id/acount_statistics"
+         android:drawableLeft="@drawable/ic_account_stat"
+         android:text="营业统计"
+         style="@style/acount_textview" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@android:color/transparent"
+            />
+
+        <TextView
+            android:id="@+id/acount_settleInfo"
+            android:drawableLeft="@drawable/ic_account_bill_settlement"
+            android:text="提现明细"
+            style="@style/acount_textview" />
+        <TextView
+            android:id="@+id/acount_financeInfo"
+            android:drawableLeft="@drawable/ic_account_finance"
+            android:text="财务中心"
+            style="@style/acount_textview" />
+
+        <TextView
+            android:id="@+id/acount_refund"
+            android:drawableLeft="@drawable/ic_account_refund"
+            android:text="退款申请"
+            style="@style/acount_textview" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@android:color/transparent"
+            />
+
+        <TextView
+            android:id="@+id/acount_msg"
+            android:drawableLeft="@drawable/ic_account_message"
+            android:text="消息通知"
+            style="@style/acount_textview" />
+
+        <TextView
+            android:id="@+id/acount_sign_out"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="16dp"
+            android:textSize="18sp"
+            android:clickable="true"
+            android:background="@drawable/shape_drag_footer"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:text="退出账号" />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,282 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:paddingBottom="16dp"
+        android:id="@+id/day_detail_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/selector_list_item_click"
+            android:clickable="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:background="@android:color/white"
+                style="@style/we_tv"
+                android:layout_width="150dp"
+                android:clickable="false"
+                android:text="收入总金额"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:textStyle="bold|italic"
+                android:id="@+id/day_detail_tv_total_total"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:paddingRight="30dp"
+                android:layout_weight="1"
+                android:clickable="false"
+                android:gravity="right|center_vertical"
+                android:textColor="@android:color/holo_red_light"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/selector_list_item_click"
+            android:clickable="true"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/we_tv"
+                android:layout_width="150dp"
+                android:clickable="false"
+                android:text="在线支付金额"
+                android:textSize="@dimen/day_title_each" />
+
+            <TextView
+                android:id="@+id/day_detail_tv_total_online"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:paddingRight="30dp"
+                android:layout_weight="1"
+                android:clickable="false"
+                android:gravity="right|center_vertical"
+                android:textColor="@android:color/holo_red_light"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/selector_list_item_click"
+            android:clickable="true"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/we_tv"
+                android:layout_width="150dp"
+                android:clickable="false"
+                android:text="餐到付款金额"
+                android:textSize="@dimen/day_title_each" />
+
+            <TextView
+                android:id="@+id/day_detail_tv_total_hand"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:paddingRight="30dp"
+                android:layout_weight="1"
+                android:clickable="false"
+                android:gravity="right|center_vertical"
+                android:textColor="@android:color/holo_red_light"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/selector_list_item_click"
+            android:clickable="true"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/we_tv"
+                android:layout_width="150dp"
+                android:clickable="false"
+                android:text="活动金额"
+                android:textSize="@dimen/day_title_each" />
+
+            <TextView
+                android:id="@+id/day_detail_tv_total_allowance"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:paddingRight="30dp"
+                android:layout_weight="1"
+                android:clickable="false"
+                android:gravity="right|center_vertical"
+                android:textColor="@android:color/holo_red_light"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_marginTop="10dp"
+            style="@style/finance_tv_title"
+            android:text="在线支付" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/ic_list_item_normal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="订单数"
+                android:textSize="@dimen/day_title_each" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="结算总额"
+                android:textSize="@dimen/day_title_each"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:onClick="onlineDetail"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:clickable="true"
+            android:background="@drawable/selector_list_item_click">
+
+            <TextView
+                android:id="@+id/day_detail_tv_online_order"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/day_detail_tv_online_total"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawableRight="@drawable/ic_foodtag_arrow"
+                android:gravity="center"
+                android:paddingRight="16dp"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            style="@style/finance_tv_title"
+            android:text="餐到付款" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/ic_list_item_normal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="订单数"
+                android:textSize="@dimen/day_title_each" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="结算总额"
+                android:textSize="@dimen/day_title_each"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:onClick="handDetail"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:clickable="true"
+            android:background="@drawable/selector_list_item_click">
+
+            <TextView
+                android:id="@+id/day_detail_tv_hand_order"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/day_detail_tv_hand_total"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawableRight="@drawable/ic_foodtag_arrow"
+                android:gravity="center"
+                android:paddingRight="16dp"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/finance_tv_title"
+            android:text="活动账单" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/ic_list_item_normal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="活动"
+                android:textSize="@dimen/day_title_each" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="订单数"
+                android:textSize="@dimen/day_title_each" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="补贴金额"
+                android:textSize="@dimen/day_title_each" />
+
+        </LinearLayout>
+        
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/day_detail_ll_present"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

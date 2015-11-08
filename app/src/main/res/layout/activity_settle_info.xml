@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context="com.mobileinternet.waimai.businessedition.activity.Acount.SettleInfoActivity">
+
+    <LinearLayout
+        android:background="@drawable/ic_list_item_normal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:textSize="18sp"
+            android:text="提现日期"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <TextView
+            android:textSize="18sp"
+            android:gravity="center"
+            android:text="提现金额"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <TextView
+            android:textSize="18sp"
+            android:gravity="center"
+            android:text="提现状态"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+
+    </LinearLayout>
+
+    <com.mobileinternet.waimai.businessedition.view.AutoRefreshListView
+        android:id="@+id/settle_listview"
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+</LinearLayout>

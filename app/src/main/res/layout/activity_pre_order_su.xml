@@ -1,0 +1,114 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:textSize="20sp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:text="@string/notice_shop_pre_order"
+        />
+
+
+    <TextView
+        android:id="@+id/pre_order_tv_business"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp"
+        android:textSize="17sp"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        android:text="营业时间："
+        />
+
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textSize="20sp"
+            android:gravity="center_vertical"
+            android:text="营业时间支持预订"
+            />
+
+        <ToggleButton
+            android:id="@+id/pre_order_tb_business"
+            android:background="@android:color/transparent"
+            android:button="@drawable/toggle_btn"
+            android:checked="true"
+            android:text=""
+            android:textOff=""
+            android:textOn=""
+            android:layout_width="100dp"
+            android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textSize="20sp"
+            android:gravity="center_vertical"
+            android:text="休息时间支持预订"
+            />
+
+        <ToggleButton
+            android:id="@+id/pre_order_tb_relax"
+            android:background="@android:color/transparent"
+            android:button="@drawable/toggle_btn"
+            android:checked="true"
+            android:text=""
+            android:textOff=""
+            android:textOn=""
+            android:layout_width="100dp"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/pre_order_tv_relax"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:textSize="17sp"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        android:text="休息时间："
+        />
+
+
+
+
+</LinearLayout>

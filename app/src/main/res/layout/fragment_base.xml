@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context="com.mobileinternet.waimai.businessedition.fragment.AcountCenter.MsgFragment">
+    <ProgressBar
+        android:id="@+id/msg_pb_load"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        style="?android:attr/progressBarStyleInverse"
+        />
+
+
+    <com.mobileinternet.waimai.businessedition.view.AutoRefreshListView
+        android:id="@+id/msg_listview"
+        android:visibility="gone"
+        android:layout_marginLeft="@dimen/listview_margin"
+        android:layout_marginRight="@dimen/listview_margin"
+        android:scrollbars="none"
+        android:listSelector="@drawable/selector_listview_select"
+        android:divider="@drawable/shape_divider_transpanrent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/msg_tv_load_result"
+        android:gravity="center"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:text="还没有数据\n刷新试试"
+        android:drawableTop="@drawable/icon_light_refresh"
+        android:textColor="#2B2B2B"
+        />
+
+</RelativeLayout>

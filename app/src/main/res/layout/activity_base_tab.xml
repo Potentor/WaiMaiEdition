@@ -1,0 +1,29 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+   <com.mobileinternet.waimai.businessedition.view.PagerSlidingTabStrip
+
+       android:id="@+id/base_pagertab"
+       android:layout_width="match_parent"
+       android:layout_height="48dp"
+       app:pstsShouldExpand="true"
+       android:background="@drawable/abc_ab_bottom_solid_dark_holo"
+       app:pstsIndicatorColor="@android:color/holo_red_dark"
+
+       />
+    <include
+        android:id="@+id/base_fragment_notice"
+        layout="@layout/view_refund_heard"/>
+
+    <android.support.v4.view.ViewPager
+        android:layout_below="@id/base_fragment_notice"
+        android:id="@+id/base_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v4.view.ViewPager>
+
+</RelativeLayout>

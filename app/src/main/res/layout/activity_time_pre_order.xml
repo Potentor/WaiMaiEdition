@@ -1,0 +1,87 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background">
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="10dp"
+        android:text="请选择每周营业日"
+        />
+
+    <LinearLayout
+        android:onClick="modifyWeek"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:background="@drawable/selector_list_item_click"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="60dp"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:clickable="false"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="16sp"
+            android:gravity="center_vertical"
+            android:text="营业时间支持预订"
+            />
+
+        <TextView
+            android:layout_weight="1"
+            android:clickable="false"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:id="@+id/time_pre_order_tv_week"
+            android:text="周一、周二、周三、周四、周五、周六、周日"
+            android:paddingRight="16dp"
+            android:paddingLeft="10dp"
+            android:maxWidth="80dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="20dp"
+        android:text="请设置营业时间段（最多三个）"
+        />
+    <LinearLayout
+        android:clickable="false"
+        android:id="@+id/time_pre_order_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"/>
+
+    <TextView
+    android:layout_marginTop="30dp"
+    android:clickable="true"
+    android:onClick="addTimeView"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:gravity="center"
+    android:textSize="20sp"
+    android:textColor="@android:color/holo_red_light"
+    android:text="添加营业时间"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:background="@drawable/shape_add_business_time_tv"
+    />
+
+
+</LinearLayout>

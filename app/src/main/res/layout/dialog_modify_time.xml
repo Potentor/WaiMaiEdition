@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#ccFFFFFF"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16.0dip">
+
+    <TextView
+        android:textSize="12sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="起始时间:"/>
+    <LinearLayout
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.mobileinternet.waimai.businessedition.view.PickerView
+            android:id="@+id/picker_start_hour"
+            style="@style/picker_modify_time" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            />
+        <com.mobileinternet.waimai.businessedition.view.PickerView
+            android:id="@+id/picker_start_minute"
+            style="@style/picker_modify_time" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:textSize="12sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="结束时间:"/>
+
+    <LinearLayout
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.mobileinternet.waimai.businessedition.view.PickerView
+            android:id="@+id/picker_end_hour"
+            style="@style/picker_modify_time" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            />
+        <com.mobileinternet.waimai.businessedition.view.PickerView
+            android:id="@+id/picker_end_minute"
+            style="@style/picker_modify_time" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

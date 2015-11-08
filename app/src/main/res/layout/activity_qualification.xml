@@ -1,0 +1,99 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/background"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+<LinearLayout
+    android:id="@+id/comment_ll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:onClick="zhizhao"
+       style="@style/license_ll"
+        >
+        <TextView
+            android:text="营业执照"
+            style="@style/license_tv_first" />
+
+        <TextView
+            android:id="@+id/license_tv_zhizhao"
+           style="@style/license_tv_second"
+            android:text="未认证"
+            />
+
+    </LinearLayout>
+
+    <com.mobileinternet.waimai.businessedition.view.smartiv.SmartImageView
+        android:id="@+id/license_sv_zhizhao"
+        style="@style/license_sv"/>
+
+
+    <LinearLayout
+        android:onClick="fuwuxuke"
+        style="@style/license_ll"
+        >
+        <TextView
+            android:text="餐饮服务许可证"
+            style="@style/license_tv_first" />
+
+        <TextView
+            android:id="@+id/license_tv_fuwuxuke"
+            style="@style/license_tv_second"
+            android:text="未认证"
+            />
+
+    </LinearLayout>
+
+    <com.mobileinternet.waimai.businessedition.view.smartiv.SmartImageView
+        android:id="@+id/license_sv_fuwuxuke"
+        style="@style/license_sv"/>
+
+    <LinearLayout
+        android:onClick="health"
+        style="@style/license_ll"
+        >
+        <TextView
+            android:text="健康证"
+            style="@style/license_tv_first" />
+
+        <TextView
+            android:id="@+id/license_tv_health"
+            style="@style/license_tv_second"
+            android:text="未认证"
+            />
+
+    </LinearLayout>
+
+    <com.mobileinternet.waimai.businessedition.view.smartiv.SmartImageView
+        android:id="@+id/license_sv_health"
+        style="@style/license_sv"/>
+
+
+    <LinearLayout
+        android:onClick="idcard"
+        style="@style/license_ll"
+        >
+        <TextView
+            android:text="法人身份证"
+            style="@style/license_tv_first" />
+
+        <TextView
+            android:id="@+id/license_tv_idcard"
+            style="@style/license_tv_second"
+            android:text="未认证"
+            />
+
+    </LinearLayout>
+
+    <com.mobileinternet.waimai.businessedition.view.smartiv.SmartImageView
+        android:id="@+id/license_sv_idcard"
+        style="@style/license_sv"/>
+
+
+
+
+</LinearLayout>
+</ScrollView>

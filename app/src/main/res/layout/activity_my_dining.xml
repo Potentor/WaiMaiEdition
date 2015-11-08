@@ -1,0 +1,299 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:scrollbars="none"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:paddingBottom="10dp"
+        android:id="@+id/dining_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        android:scrollbars="none"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:onClick="qulification"
+            style="@style/shop_ll"
+            android:layout_marginTop="16dp"
+            android:clickable="true"
+            android:padding="0dp">
+
+            <TextView
+                style="@style/we_tv"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:clickable="false"
+                android:text="营业资质" />
+
+            <TextView
+                android:id="@+id/dining_qulification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/shape_add_business_time_tv"
+                android:clickable="false"
+                android:gravity="center"
+                android:padding="10dp"
+                android:textColor="@android:color/holo_red_light" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            style="@style/shop_ll"
+            android:onClick="modifyTime"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:clickable="true"
+            android:padding="0dp">
+
+            <TextView
+                style="@style/we_tv"
+                android:layout_width="wrap_content"
+                android:clickable="false"
+                android:text="营业时间" />
+
+            <TextView
+                android:id="@+id/dining_time_business"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="false"
+                android:gravity="right|center_vertical"
+                android:paddingLeft="20dp"
+                android:paddingRight="16dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:onClick="address"
+            style="@style/shop_ll"
+            android:clickable="true"
+            android:padding="0dp"
+            >
+
+            <TextView
+
+                style="@style/we_tv"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:clickable="false"
+                android:text="餐厅地址" />
+
+            <TextView
+                android:layout_marginRight="16dp"
+                android:id="@+id/dining_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:gravity="center"
+                android:maxLines="3"
+                android:paddingLeft="20dp"
+                android:singleLine="false"
+                 />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:onClick="phone"
+            style="@style/shop_ll"
+            android:clickable="true"
+            android:padding="0dp"
+            android:paddingLeft="16dp"
+            >
+
+            <TextView
+                style="@style/we_tv"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:clickable="false"
+                android:text="订餐电话" />
+
+            <TextView
+                android:layout_marginRight="16dp"
+                android:id="@+id/dining_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:clickable="false"
+                android:gravity="center"
+                 />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="服务信息"
+            android:textSize="13sp" />
+
+
+        <LinearLayout
+            style="@style/shop_ll"
+            android:background="@drawable/ic_list_item_normal"
+            android:clickable="true"
+            android:padding="0dp"
+            android:paddingLeft="16dp"
+            >
+
+            <TextView
+                style="@style/we_tv"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:clickable="false"
+                android:text="接单时间" />
+
+            <TextView
+                android:id="@+id/dining_minute_confirm"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="false"
+                android:gravity="center"
+               />
+
+            <TextView
+                android:layout_marginRight="16dp"
+                android:id="@+id/dining_better_confirm"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="false"
+                android:gravity="center"
+                 />
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/shop_ll"
+            android:background="@drawable/ic_list_item_normal"
+            android:clickable="true"
+            android:padding="0dp"
+            android:paddingLeft="16dp"
+            >
+
+            <TextView
+                style="@style/we_tv"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:clickable="false"
+                android:text="送餐速度" />
+
+            <TextView
+                android:id="@+id/dining_minute_speed"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="false"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:layout_marginRight="16dp"
+                android:id="@+id/dining_better_speed"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="false"
+                android:gravity="center"
+                 />
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/shop_ll"
+            android:background="@drawable/ic_list_item_normal"
+            android:clickable="true"
+            android:padding="0dp"
+            android:paddingLeft="16dp"
+            >
+
+            <TextView
+                style="@style/we_tv"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:clickable="false"
+                android:text="及时到达率" />
+
+            <TextView
+                android:id="@+id/dining_rate_intime"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="false"
+                android:gravity="center"
+               />
+
+            <TextView
+                android:layout_marginRight="16dp"
+                android:id="@+id/dining_better_intime"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="false"
+                android:gravity="center"
+                />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="超时赔付"
+            android:textSize="13sp" />
+
+        <LinearLayout
+            android:onClick="payForOot"
+            style="@style/shop_ll"
+            android:clickable="true"
+            android:padding="0dp"
+            android:paddingLeft="16dp"
+            >
+
+            <TextView
+                style="@style/we_tv"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:clickable="false"
+                android:text="超时赔付状态" />
+
+            <TextView
+                android:layout_marginRight="16dp"
+                android:id="@+id/dining_pay_oot"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:clickable="false"
+                android:gravity="center"
+                android:text="未开通" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="优惠信息"
+            android:textSize="13sp" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/dining_ll_present"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/ll_container"
+        android:clickable="true"
+        android:gravity="right"
+        android:background="@drawable/selector_list_item_click"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:clickable="false"
+            android:id="@+id/tv_starttime"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:gravity="right|center_vertical"
+            android:paddingRight="16dp"
+            android:text="11:00"
+            android:textSize="18sp" />
+
+        <TextView
+            android:clickable="false"
+            android:layout_width="30dp"
+            android:layout_height="48dp"
+            android:gravity="center"
+            android:text="—"
+            android:textSize="18sp" />
+
+        <TextView
+            android:clickable="false"
+            android:id="@+id/tv_endtime"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="16dp"
+            android:text="14:00"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_alignParentRight="true"
+        android:id="@+id/iv_delete"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:clickable="true"
+        android:src="@drawable/ic_delete" />
+
+</RelativeLayout>

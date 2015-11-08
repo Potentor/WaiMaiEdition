@@ -1,0 +1,100 @@
+<resources>
+    <string name="app_name">BusinessEdition</string>
+    <string name="today_order">今日订单</string>
+    <string name="drawer_order_today">今日订单</string>
+    <string name="drawer_poi">餐厅管理</string>
+    <string name="drawer_food">菜品管理</string>
+    <string name="drawer_account">账户中心</string>
+    <string name="drawer_orders">订单中心</string>
+    <string name="drawer_setting">设置/打印机</string>
+    <string name="drawer_about">关于我们</string>
+
+    <string name="tixian_notice">提取的金额最小为￥10.0</string>
+    <string name="shop_not_qualification">您还有证件未上传，或未审核通过</string>
+
+    <string name="notice_shop_pre_order">预订单是指用户下单时可指定送达时间。</string>
+
+    <string name="status_recive">当前餐厅处于接受预定状态
+    </string>
+
+    <string name="status_rest">当前餐厅处于休息状态
+    </string>
+
+    <string name="status_business">当前餐厅处于营业状态
+    </string>
+
+     <string name="status_notice">当您希望长时间不再接收订单时，请点击上方按钮停止营业，
+         开启后需手动恢复
+    </string>
+
+    <string name="refund_notice">新的退款申请，请您在24小时内处理，逾期将视为同意退款处理</string>
+
+    <string-array name="invalid_cause">
+        <item>"协商一致"</item>
+        <item>"订单违规"</item>
+        <item>"系统故障"</item>
+    </string-array>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_example">Example action</string>
+
+    <string name="action_settings">Settings</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_msg">MsgActivity</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_refund">RefundActivity</string>
+    <string name="title_activity_statistics">StatisticsActivity</string>
+    <string name="title_activity_acount">AcountActivity</string>
+    <string name="title_activity_settle_info">SettleInfoActivity</string>
+    <string name="title_activity_finance">FinanceActivity</string>
+    <string name="title_activity_take_out_mny">TakeOutMnyActivity</string>
+    <string name="title_activity_shop_comment">ShopCommentActivity</string>
+    <string name="title_activity_shop_index">ShopIndexActivity</string>
+    <string name="title_activity_qualification">QualificationActivity</string>
+    <string name="title_activity_shop_status">ShopStatusActivity</string>
+    <string name="title_activity_pre_order_su">PreOrderSuActivity</string>
+    <string name="title_activity_shop_notice">ShopNoticeActivity</string>
+    <string name="title_activity_my_shop">MyShopActivity</string>
+    <string name="title_activity_dish">DishActivity</string>
+    <string name="title_activity_add_dish_cat">AddDishCatActivity</string>
+    <string name="title_activity_dish_list">DishListActivity</string>
+    <string name="title_activity_cai">CaiActivity</string>
+    <string name="title_activity_cai_add">CaiAddActivity</string>
+    <string name="title_activity_time_pre_order">TimePreOrderActivity</string>
+    <string name="title_activity_my_dining">MyDiningActivity</string>
+    <string name="title_activity_pay_for_oot">PayForOotActivity</string>
+    <string name="title_activity_pwd">PwdActivity</string>
+    <string name="title_activity_phone">PhoneActivity</string>
+    <string name="title_activity_trend">TrendActivity</string>
+    <string name="title_activity_bus_day_detail">BusDayDetailActivity</string>
+    <string name="title_activity_order">OrderActivity</string>
+    <string name="title_activity_order_detail">OrderDetailActivity</string>
+    <string name="title_activity_base_tab">BaseTabActivity</string>
+    <string name="title_activity_msg_detail">MsgDetailActivity</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_flash">外卖商家版</string>
+    <string name="title_activity_quanlity">QuanlityActivity</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_line_chart">LineChartActivity</string>
+</resources>

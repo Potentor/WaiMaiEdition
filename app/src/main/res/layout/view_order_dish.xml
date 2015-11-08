@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingLeft="25dp"
+    android:paddingRight="10dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="30dp">
+
+    <TextView
+        android:gravity="center_vertical"
+        android:id="@+id/order_item_tv_dish_name"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_centerInParent="true"
+        android:text="凉皮"
+        android:textSize="@dimen/order_content_tv_size" />
+
+    <TextView
+        android:id="@+id/order_item_tv_dish_num"
+        android:gravity="center"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:text="X3"
+        android:textSize="@dimen/order_content_tv_size" />
+
+
+    <TextView
+        android:id="@+id/order_item_tv_dish_price"
+        android:gravity="center"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:text="8元"
+        android:textSize="@dimen/order_content_tv_size" />
+
+
+</LinearLayout>

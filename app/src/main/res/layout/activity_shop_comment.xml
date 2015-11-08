@@ -1,0 +1,49 @@
+<com.mobileinternet.waimai.businessedition.view.MScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<LinearLayout
+    android:id="@+id/comment_ll"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+      <include
+          layout="@layout/comment_summarize"/>
+
+    <LinearLayout
+        android:background="@android:color/white"
+        android:layout_marginTop="0dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+        <TextView
+            android:onClick="badNotReply"
+            android:id="@+id/comment_rb_01"
+            android:text="未回复差评"
+           style="@style/comment_tab"/>
+
+        <TextView
+            android:id="@+id/comment_rb_02"
+            android:onClick="notReply"
+            android:text="未回复"
+            style="@style/comment_tab"/>
+
+        <TextView
+            android:id="@+id/comment_rb_03"
+            android:onClick="allComment"
+            android:text="全部评论"
+            style="@style/comment_tab"/>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/comment_fragmentlayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+
+</LinearLayout>
+</com.mobileinternet.waimai.businessedition.view.MScrollView>

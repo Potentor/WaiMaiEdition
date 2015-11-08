@@ -1,0 +1,305 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Base.Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="basic_ll_horizontal">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+
+    <style name="basic_ll_vertical">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="menu_option_textview">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:gravity">start|center_vertical</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:background">@drawable/selector_menu_click</item>
+        <item name="android:clickable">true</item>
+        <item name="android:padding">10dp</item>
+    </style>
+
+    <style name="menu_option_imageview">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:background">@drawable/selector_menu_click</item>
+    </style>
+
+
+    <style name="acount_textview">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:gravity">start|center_vertical</item>
+        <item name="android:background">@drawable/selector_list_item_click</item>
+        <item name="android:clickable">true</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:drawablePadding">10dp</item>
+    </style>
+
+    <style name="finance_tv_title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:layout_marginLeft">16dp</item>
+    </style>
+
+    <style name="finance_ll">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:background">@drawable/selector_list_item_click</item>
+        <item name="android:paddingLeft">16dp</item>
+    </style>
+
+    <style name="finance_tv_content_left">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">left|center_vertical</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="finance_tv_content_right">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">right|center_vertical</item>
+        <item name="android:gravity">right</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_marginRight">16dp</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+
+    <style name="tixian_tv_left" parent="finance_tv_content_left">
+
+    </style>
+
+    <style name="tixian_tv_right" parent="finance_tv_content_right">
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:layout_marginLeft">10dp</item>
+    </style>
+
+
+    <style name="progress_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+
+    <style name="shop_tv">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:drawablePadding">8dp</item>
+        <item name="android:clickable">false</item>
+    </style>
+
+    <style name="shop_ll">
+        <item name="android:background">@drawable/selector_list_item_click</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingRight">@dimen/padding_right</item>
+        <item name="android:paddingLeft">@dimen/padding_left</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="iv_arrow">
+        <item name="android:clickable">false</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:src">@drawable/ic_foodtag_arrow</item>
+    </style>
+
+    <style name="shop_ll_index" parent="basic_ll_vertical">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:layout_height">110dp</item>
+        <item name="android:clickable">true</item>
+        <!-- <item name="android:background">@drawable/selector_list_item_click</item>-->
+    </style>
+
+
+
+    <style name="shop_index_tv">
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:drawableRight">@drawable/ic_info_gray</item>
+        <item name="android:drawablePadding">8dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:clickable">false</item>
+    </style>
+
+    <style name="shop_index_rl">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:clickable">false</item>
+    </style>
+
+    <style name="shop_index_rl_tv_big">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textSize">25sp</item>
+    </style>
+
+    <style name="shop_index_rl_tv_center">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+
+    <style name="shop_index_rl_tv_left">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="we_tv" parent="@style/acount_textview">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+    <style name="picker_modify_time">
+        <item name="android:layout_width">120dp</item>
+        <item name="android:layout_height">100dp</item>
+        <item name="android:padding">10dp</item>
+
+    </style>
+    
+
+    <style name="index_up_ll" parent="@style/shop_ll_index">
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:layout_height">70dp</item>
+        <item name="android:background">@drawable/selector_index</item>
+    </style>
+
+    <style name="index_up_rl">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:clickable">false</item>
+    </style>
+
+    <style name="comment_tab">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="pwd_et">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:background">@drawable/shape_pwd_et</item>
+        <item name="android:textColorHint">@android:color/darker_gray</item>
+    </style>
+
+    <style name="add_dish_ll">
+        <item name="android:background">@android:color/white</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">@dimen/add_dish_padding</item>
+        <item name="android:paddingRight">@dimen/add_dish_padding</item>
+    </style>
+
+    <style name="add_dish_tv">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:gravity">center</item>
+
+    </style>
+
+    <style name="add_dish_et">
+        <item name="android:background">@android:color/white</item>
+        <item name="android:textColorHint">@android:color/secondary_text_dark</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:gravity">right|center_vertical</item>
+        <item name="android:paddingRight">10dp</item>
+    </style>
+
+    <style name="add_dish_title">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:gravity">center_vertical|left</item>
+        <item name="android:paddingLeft">@dimen/add_dish_padding</item>
+    </style>
+
+    <style name="license_ll">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:background">@drawable/selector_list_item_click</item>
+    </style>
+
+    <style name="license_tv_first">
+        <item name="android:clickable">false</item>
+        <item name="android:paddingLeft">16sp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="license_tv_second">
+        <item name="android:clickable">false</item>
+        <item name="android:minWidth">140dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:drawableRight">@drawable/ic_collapse</item>
+        <item name="android:drawablePadding">10dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_marginRight">16sp</item>
+    </style>
+
+    <style name="license_sv">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">300dp</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:background">@drawable/img_food_info_default_big</item>
+        <item name="android:visibility">gone</item>
+    </style>
+
+</resources>

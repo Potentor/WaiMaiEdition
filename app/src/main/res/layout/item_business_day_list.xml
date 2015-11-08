@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:background="@drawable/selector_list_item_click"
+    android:layout_width="match_parent"
+    android:layout_height="60dp">
+
+    <TextView
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:text="2015-5-8"
+        android:id="@+id/settle_date"
+        android:textSize="18sp"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        />
+    <TextView
+        android:paddingRight="16dp"
+        android:drawableRight="@drawable/ic_foodtag_arrow"
+        android:text="18$"
+        android:id="@+id/settle_money"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="60dp" />
+</LinearLayout>

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#677777"
+    android:paddingBottom="16dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/comment_tv_total_score"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="25dp"
+            android:gravity="bottom"
+            android:text="4.6"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/comment_tv_consume_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/ic_delivery_time_big"
+            android:drawablePadding="8dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="配送时间：30分钟"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <include layout="@layout/five_red_starts" />
+
+        <TextView
+            android:id="@+id/comment_tv_total_people"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="67"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <include layout="@layout/five_starts"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="40dp"
+            />
+
+        <TextView
+            android:id="@+id/comment_tv_five_people"
+            android:gravity="right"
+            android:paddingRight="16dp"
+            android:layout_width="wrap_content"
+            android:minWidth="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="67"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <include layout="@layout/four_starts"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="40dp"
+            />
+
+        <TextView
+            android:id="@+id/comment_tv_four_people"
+            android:gravity="right"
+            android:paddingRight="16dp"
+            android:layout_width="wrap_content"
+            android:minWidth="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="7"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <include layout="@layout/three_starts"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="40dp"
+            />
+
+        <TextView
+            android:id="@+id/comment_tv_three_people"
+            android:paddingRight="16dp"
+            android:layout_width="wrap_content"
+            android:minWidth="40dp"
+            android:gravity="right"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="3"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <include layout="@layout/two_starts"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="40dp"
+            />
+
+        <TextView
+            android:id="@+id/comment_tv_two_people"
+            android:paddingRight="16dp"
+            android:layout_width="wrap_content"
+            android:minWidth="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="1"
+            android:gravity="right"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <include layout="@layout/one_starts"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="40dp"
+            />
+
+        <TextView
+            android:id="@+id/comment_tv_one_people"
+            android:paddingRight="16dp"
+            android:layout_width="wrap_content"
+            android:minWidth="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="right"
+            android:text="3"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

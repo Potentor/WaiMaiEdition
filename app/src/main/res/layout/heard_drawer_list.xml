@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="@dimen/navigation_drawer_width"
+    android:clickable="false"
+    android:background="@android:color/darker_gray"
+    android:paddingLeft="10dp"
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp"
+    android:layout_height="150dp">
+
+    <com.mobileinternet.waimai.businessedition.view.smartiv.SmartImageView
+        android:id="@+id/drawer_heard_iv"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:src="@drawable/img_money"
+        android:scaleType="fitCenter"
+        android:clickable="false"
+        />
+    <LinearLayout
+        android:paddingLeft="10dp"
+        android:gravity="left|center_vertical"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:clickable="false"
+        android:layout_height="match_parent">
+        <TextView
+            android:clickable="false"
+            android:id="@+id/drawer_heard_tv_acount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            />
+        <TextView
+            android:minWidth="100dp"
+            android:clickable="false"
+            android:id="@+id/drawer_heard_tv_status"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#6A8528"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:background="@drawable/shape_drawer_heard_textview"
+            />
+
+        </LinearLayout>
+
+</LinearLayout>

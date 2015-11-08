@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mobileinternet.waimai.businessedition" >
+
+    <!-- To access Google+ APIs: -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+
+    <application
+        android:name=".app.IApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/activity_switch" >
+        <activity
+            android:name=".activity.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/activity_switch" >
+        </activity>
+        <activity
+            android:name=".activity.Acount.MsgActivity"
+            android:label="@string/title_activity_msg"
+            android:theme="@style/activity_switch" >
+        </activity>
+        <activity
+            android:name=".activity.Acount.RefundActivity"
+            android:label="@string/title_activity_refund"
+            android:theme="@style/activity_switch" >
+        </activity>
+        <activity
+            android:name=".activity.Acount.StatisticsActivity"
+            android:label="@string/title_activity_statistics"
+            android:theme="@style/activity_switch" >
+        </activity>
+        <activity
+            android:name=".activity.Acount.AcountActivity"
+            android:label="@string/title_activity_acount"
+            android:theme="@style/activity_switch" >
+        </activity>
+        <activity
+            android:name=".activity.Acount.SettleInfoActivity"
+            android:label="@string/title_activity_settle_info"
+            android:theme="@style/activity_switch" >
+        </activity>
+        <activity
+            android:name=".activity.Acount.FinanceActivity"
+            android:label="@string/title_activity_finance"
+            android:theme="@style/activity_switch" >
+        </activity>
+        <activity
+            android:name=".activity.Acount.TakeOutMnyActivity"
+            android:label="@string/title_activity_take_out_mny" >
+        </activity>
+        <activity
+            android:name=".activity.Dining.ShopCommentActivity"
+            android:label="@string/title_activity_shop_comment" >
+        </activity>
+        <activity
+            android:name=".activity.Dining.ShopIndexActivity"
+            android:label="@string/title_activity_shop_index" >
+        </activity>
+        <activity
+            android:name=".activity.Dining.ShopStatusActivity"
+            android:label="@string/title_activity_shop_status" >
+        </activity>
+        <activity
+            android:name=".activity.Dining.PreOrderSuActivity"
+            android:label="@string/title_activity_pre_order_su" >
+        </activity>
+        <activity
+            android:name=".activity.Dining.ShopNoticeActivity"
+            android:label="@string/title_activity_shop_notice" >
+        </activity>
+        <activity
+            android:name=".activity.Dish.CatModifyActivity"
+            android:label="@string/title_activity_dish"
+            android:windowSoftInputMode="stateHidden|adjustPan" >
+        </activity>
+        <activity
+            android:name=".activity.Dish.CatAddActivity"
+            android:label="@string/title_activity_add_dish_cat"
+            android:windowSoftInputMode="stateHidden|adjustPan" >
+        </activity>
+        <activity
+            android:name=".activity.Dish.CaiListActivity"
+            android:label="@string/title_activity_dish_list" >
+        </activity>
+        <activity
+            android:name=".activity.Dish.CaiModifyActivity"
+            android:label="@string/title_activity_cai"
+            android:windowSoftInputMode="stateHidden|adjustPan" >
+        </activity>
+        <activity
+            android:name=".activity.Dish.CaiAddActivity"
+            android:label="@string/title_activity_cai_add"
+            android:windowSoftInputMode="stateHidden|adjustPan" >
+        </activity>
+        <activity
+            android:name=".activity.Dining.TimeModifyActivity"
+            android:label="@string/title_activity_time_pre_order" >
+        </activity>
+        <activity
+            android:name=".activity.Dining.MyDiningActivity"
+            android:label="@string/title_activity_my_dining" >
+        </activity>
+        <activity
+            android:name=".activity.Dining.PayForOotActivity"
+            android:label="@string/title_activity_pay_for_oot" >
+        </activity>
+        <activity
+            android:name=".activity.Acount.PwdActivity"
+            android:label="@string/title_activity_pwd" >
+        </activity>
+        <activity
+            android:name=".activity.Acount.PhoneActivity"
+            android:label="@string/title_activity_phone" >
+        </activity>
+        <activity
+            android:name=".activity.Acount.BusDayDetailActivity"
+            android:label="@string/title_activity_bus_day_detail" >
+        </activity>
+        <activity
+            android:name=".activity.Acount.DayOrderListActivity"
+            android:label="@string/title_activity_order" >
+        </activity>
+        <activity
+            android:name=".activity.Acount.OrderDetailActivity"
+            android:label="@string/title_activity_order_detail" >
+        </activity>
+
+        <service
+            android:name=".service.NetStateService"
+            android:enabled="true"
+            android:exported="true" >
+        </service>
+
+        <activity
+            android:name=".activity.Acount.MsgDetailActivity"
+            android:label="@string/title_activity_msg_detail" >
+        </activity>
+
+        <service
+            android:name=".service.PollingService"
+            android:enabled="true"
+            android:exported="true" >
+        </service>
+        <service
+            android:name=".service.MusicService"
+            android:exported="false" >
+        </service>
+
+        <activity
+            android:name=".activity.LoginActivity"
+            android:label="@string/title_activity_login" >
+        </activity>
+        <activity android:name=".activity.ClipImageActivity" >
+        </activity>
+        <activity
+            android:name=".activity.FlashActivity"
+            android:label="@string/title_activity_flash" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.Dining.QuanlityActivity"
+            android:label="@string/title_activity_main2" >
+        </activity>
+        <activity
+            android:name=".activity.Acount.TrendActivity"
+            android:label="@string/title_activity_line_chart" >
+        </activity>
+    </application>
+
+</manifest>

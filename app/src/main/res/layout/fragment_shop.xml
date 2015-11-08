@@ -1,0 +1,308 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:scrollbars="none"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:scrollbars="none"
+        android:paddingBottom="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background">
+
+      <LinearLayout
+          android:id="@+id/shop_qualification"
+          android:clickable="true"
+          android:background="@drawable/selector_list_item_click"
+          android:paddingLeft="@dimen/padding_left"
+          android:paddingRight="@dimen/padding_right"
+          android:orientation="horizontal"
+          android:gravity="center_vertical"
+          android:layout_width="match_parent"
+          android:layout_height="50dp">
+          <ImageView
+              android:clickable="false"
+              android:src="@drawable/ic_notice"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content" />
+          <TextView
+              android:clickable="false"
+              android:paddingLeft="10dp"
+              android:paddingRight="10dp"
+              android:text="@string/shop_not_qualification"
+              android:gravity="center"
+              android:layout_weight="1"
+              android:layout_width="0dp"
+              android:layout_height="match_parent" />
+
+          <TextView
+              android:clickable="false"
+              android:textColor="@android:color/holo_red_light"
+              android:text="查看"
+              android:gravity="center"
+              android:layout_width="wrap_content"
+              android:layout_height="match_parent" />
+
+          </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/shop_myacount"
+            android:layout_marginTop="10dp"
+            android:clickable="true"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="@drawable/selector_list_item_click"
+            android:gravity="center_vertical"
+            android:padding="20dp">
+
+            <com.mobileinternet.waimai.businessedition.view.smartiv.SmartImageView
+                android:id="@+id/shop_iv_logo"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:clickable="false"
+                android:scaleType="fitCenter"
+                android:src="@drawable/img_food_info_default_big" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="false"
+                android:gravity="left|center_vertical"
+                android:orientation="vertical"
+                android:paddingLeft="10dp">
+
+                <TextView
+                    android:id="@+id/shop_tv_shop_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/shop_tv_acount_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:clickable="false"
+                    android:gravity="center"
+                    android:paddingTop="10dp"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <ImageView
+                style="@style/iv_arrow"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/shop_comment"
+            style="@style/shop_ll">
+            <TextView
+                android:drawableLeft="@drawable/ic_poi_evaluation"
+                android:text="餐厅评价"
+                style="@style/shop_tv" />
+
+            <TextView
+                android:id="@+id/shop_tv_comment"
+                android:textSize="20sp"
+                android:clickable="false"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:clickable="false"
+                android:paddingRight="10dp"
+                android:text="/5"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+            <ImageView
+                style="@style/iv_arrow"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/shop_index"
+            style="@style/shop_ll">
+            <TextView
+                android:drawableLeft="@drawable/ic_poi_index"
+                android:text="餐厅指数"
+                style="@style/shop_tv" />
+
+            <ImageView
+               style="@style/iv_arrow"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:divider="@drawable/divider_vertical"
+            android:showDividers="middle"
+            android:orientation="horizontal"
+            android:padding="0dp"
+            style="@style/shop_ll">
+
+            <LinearLayout
+                style="@style/shop_ll_index">
+
+                <TextView
+                    android:text="接单量"
+                   style="@style/shop_index_tv" />
+
+                <RelativeLayout
+                    style="@style/shop_index_rl">
+
+                    <TextView
+                        android:id="@+id/text"
+                        style="@style/shop_index_rl_tv_center"
+                        android:text="/"
+                        />
+                    <TextView
+                        android:id="@+id/shop_index_tv_jidan"
+                        android:layout_alignBottom="@id/text"
+                        android:layout_toLeftOf="@id/text"
+                        style="@style/shop_index_rl_tv_big"
+                        />
+                    <TextView
+                        android:id="@+id/shop_index_tv_total1"
+                        android:layout_toRightOf="@id/text"
+                        style="@style/shop_index_rl_tv_left"
+                        />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                style="@style/shop_ll_index">
+
+                <TextView
+                    android:text="超时接单量"
+                    style="@style/shop_index_tv" />
+
+                <RelativeLayout
+                    style="@style/shop_index_rl">
+
+                    <TextView
+                        android:id="@+id/text2"
+                        style="@style/shop_index_rl_tv_center"
+                        android:text="/"
+                        />
+                    <TextView
+                        android:id="@+id/shop_index_tv_oot"
+                        android:layout_alignBottom="@id/text2"
+                        android:layout_toLeftOf="@id/text2"
+                        style="@style/shop_index_rl_tv_big"
+                        />
+                    <TextView
+                        android:id="@+id/shop_index_tv_total2"
+                        android:layout_toRightOf="@id/text2"
+                        style="@style/shop_index_rl_tv_left"
+                        />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                style="@style/shop_ll_index">
+
+                <TextView
+                    android:text="催单量"
+                    style="@style/shop_index_tv" />
+
+                <RelativeLayout
+                    style="@style/shop_index_rl">
+
+                    <TextView
+                        android:id="@+id/text3"
+                        style="@style/shop_index_rl_tv_center"
+                        android:text="/"
+                        />
+                    <TextView
+                        android:id="@+id/shop_index_tv_cuidan"
+                        android:layout_alignBottom="@id/text3"
+                        android:layout_toLeftOf="@id/text3"
+                        style="@style/shop_index_rl_tv_big"
+                        />
+                    <TextView
+                        android:id="@+id/shop_index_tv_total3"
+                        android:layout_toRightOf="@id/text3"
+                        style="@style/shop_index_rl_tv_left"
+                        />
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/shop_status_now"
+            android:layout_marginTop="45dp"
+            style="@style/shop_ll">
+            <TextView
+                android:drawableLeft="@drawable/ic_poi_status"
+                android:text="营业状态"
+                style="@style/shop_tv" />
+
+            <TextView
+                android:id="@+id/shop_tv_status"
+                android:clickable="false"
+                android:paddingRight="10dp"
+                android:textColor="@android:color/holo_green_light"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+            <ImageView
+                style="@style/iv_arrow"
+                />
+
+        </LinearLayout>
+        <TextView
+            style="@style/finance_tv_title"
+            android:text="常用设置" />
+
+
+        <LinearLayout
+            android:id="@+id/shop_support_pre_order"
+            style="@style/shop_ll">
+            <TextView
+                android:drawableLeft="@drawable/ic_receive_pre_order"
+                android:text="预订单支持"
+                style="@style/shop_tv" />
+
+            <TextView
+                android:id="@+id/shop_tv_support"
+                android:clickable="false"
+                android:paddingRight="10dp"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+            <ImageView
+                style="@style/iv_arrow"
+                />
+
+        </LinearLayout>
+
+        <TextView
+
+            android:id="@+id/shop_notification"
+            android:drawableLeft="@drawable/ic_poi_ad_info"
+            android:text="商家公告"
+            style="@style/acount_textview" />
+        <TextView
+            android:id="@+id/shop_myshop"
+            android:drawableLeft="@drawable/ic_check_my_poi"
+            android:text="我的门店"
+            style="@style/acount_textview" />
+
+
+    </LinearLayout>
+
+</ScrollView>

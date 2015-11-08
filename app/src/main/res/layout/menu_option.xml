@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:background="@android:color/transparent"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="48dp">
+
+    <TextView
+        android:id="@+id/menu_item_refund"
+        style="@style/menu_option_textview"
+        android:text="待退款"
+        />
+
+    <TextView
+        android:id="@+id/menu_item_msg"
+        style="@style/menu_option_textview"
+        android:text="消息"
+        />
+
+    <EditText
+        android:visibility="gone"
+        android:layout_marginRight="10dp"
+        android:id="@+id/menu_item_et"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:maxWidth="300dp"
+        android:layout_height="40dp"
+        android:padding="5dp"
+        android:gravity="center"
+        android:hint="输入电话号码"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/secondary_text_dark"
+        android:textSize="13sp"
+        android:inputType="number"
+        />
+
+
+    <ImageView
+        android:id="@+id/menu_item_search"
+        style="@style/menu_option_imageview"
+        android:src="@drawable/ic_search"
+        />
+
+    <ImageView
+        android:id="@+id/menu_item_refresh_orders"
+        style="@style/menu_option_imageview"
+        android:src="@drawable/icon_dark_redo"
+        android:visibility="gone"
+        />
+
+    <ImageView
+        android:id="@+id/menu_item_refresh_acount"
+        style="@style/menu_option_imageview"
+        android:src="@drawable/icon_dark_redo"
+        android:visibility="gone"
+        />
+
+    <ImageView
+        android:id="@+id/menu_item_refresh_shop"
+        style="@style/menu_option_imageview"
+        android:src="@drawable/icon_dark_redo"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:id="@+id/menu_item_add"
+        style="@style/menu_option_textview"
+        android:visibility="gone"
+        android:text="添加分类"
+        />
+</LinearLayout>
